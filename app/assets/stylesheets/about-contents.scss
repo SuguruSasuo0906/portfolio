@@ -1,0 +1,37 @@
+.about-contents{
+  display: flex;
+  width: 100%;
+
+  &-left{
+    width: 50%;
+    
+    &__about-img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-right{
+    width: 50%;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__cont{
+
+      &__name{
+        font-size: 20px;
+        padding-bottom: 40px;
+      }
+  
+      &__text-wrap{
+        display: block;
+        width: 75%;
+        height: auto;
+        word-break: break-word;
+      }
+    }
+  }
+}

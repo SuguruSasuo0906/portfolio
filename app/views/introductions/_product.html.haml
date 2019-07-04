@@ -1,0 +1,33 @@
+#product-overlay
+
+.product-container
+  .product-container-title
+    %h1
+      PRODUCT
+  .product-container-discription
+    %span
+      腕によりをかけて作った愛すべき制作物です。クリックして頂くと詳細画面が表示されます。少しずつ機能も更新していってます。
+  .product-container-wrap
+    .product-box
+      .product-box__img
+        = image_tag "chatspace001.png"
+      .product-box__title
+        %h2
+          ChatSpace
+
+    .product-box
+      .product-box__img
+        = image_tag "sukoyaka001.png"
+      .product-box__title
+        %h2
+          「NPO法人すこやか地域支援協会」
+          %br Webサイト
+
+    .product-box
+      .product-box__img
+        = image_tag "merukari001.png"
+      .product-box__title
+        %h2
+          メルカリ似ECサイト
+        
+= render partial:"chatspace"

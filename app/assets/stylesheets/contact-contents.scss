@@ -1,0 +1,72 @@
+.contact-contents{
+  width: 100vw;
+  height: 100vh;
+  background:url('tile.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_contact{
+  width: 75%;
+  height: 80vh;
+  background: #fff;
+  opacity: 0.8;
+}
+
+.contact-contents__wrap{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact-title{
+  font-size: 5rem;
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+.contact-discription{
+  margin-bottom:30px;
+}
+
+.contact-wrap{
+  &__text_field{
+    display: block;
+    width: 100%;
+    height: 5vh;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+
+  }
+
+  &__text_area{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+
+  }
+
+  &__text_btn{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 5vh;
+    padding: 8px;
+    border: none;
+    background: #adcec2;
+    color: #fff;
+
+    &:hover{
+      border: 2px solid #adcec2;
+      color: #adcec2;
+      background: #fff;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+}

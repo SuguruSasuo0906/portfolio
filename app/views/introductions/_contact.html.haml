@@ -1,0 +1,17 @@
+= form_for(@contact, url:introductions_path) do |f|
+  .contact-contents__wrap
+    .contact-title
+      CONTACT
+    .contact-discription
+      %span
+        ご覧頂きありがとうございました。もし私やこのサイトについて何かコメントがありましたら、下記のフォームをご利用下さい。
+    .contact-wrap
+      = f.text_field :name ,placeholder:"お名前",class:"contact-wrap__text_field"
+
+      = f.text_field :email,placeholder:"返信先メールアドレス",class:"contact-wrap__text_field"
+
+      = f.text_field :tell,placeholder:"電話番号",class:"contact-wrap__text_field"
+
+      = f.text_area :message,placeholder:"お問い合わせ内容",class:"contact-wrap__text_area"
+
+      = f.submit '送信',class:"contact-wrap__text_btn"
