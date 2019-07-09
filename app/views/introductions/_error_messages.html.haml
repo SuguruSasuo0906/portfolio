@@ -1,0 +1,4 @@
+- if contact.errors.any?
+  - contact.errors.full_messages.each do |message|
+    %span
+      = message
