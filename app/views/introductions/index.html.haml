@@ -1,29 +1,34 @@
-.top-contents
-  %ul.nav
-    %li.nav__title
-      TOP
-    %li.nav__title
-      ABOUT
-    %li.nav__title
-      SKILL
-    %li.nav__title
-      PRODUCTS
-    %li.nav__title
-      問い合わせ
+%ul.nav
+  %li.nav__title#top-nav
+    TOP
+  %li.nav__title#about-nav
+    ABOUT
+  %li.nav__title#skill-nav
+    SKILL
+  %li.nav__title#product-nav
+    PRODUCTS
+  %li.nav__title#contact-nav
+    問い合わせ
 
-  = embedded_svg("SasuoPortfolio.svg", class: "top-contents__title")
+#top
+  .top-contents
+    = embedded_svg("SasuoPortfolio.svg", class: "top-contents__title")
 
-.about-contents
-  = render partial:'about'
+#about
+  .about-contents
+    = render partial:'about'
 
-.skill-contents
-  = render partial:'skill'
+#skill
+  .skill-contents
+    = render partial:'skill'
 
-.product-contents
-  = render partial:'product'
+#product
+  .product-contents
+    = render partial:'product'
 
-.contact-contents
-  = render partial:'contact'
+#contact
+  .contact-contents
+    = render partial:'contact'
 
 
 

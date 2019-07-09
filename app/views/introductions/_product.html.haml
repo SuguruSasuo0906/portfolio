@@ -3,31 +3,113 @@
 .product-container
   .product-container-title
     %h1
-      PRODUCT
+      PRODUCTS
   .product-container-discription
     %span
-      腕によりをかけて作った愛すべき制作物です。クリックして頂くと詳細画面が表示されます。少しずつ機能も更新していってます。
+      腕によりをかけて作った制作物です。クリックして頂くと詳細画面が表示されます。
   .product-container-wrap
-    .product-box
+    .product-box{data:{target:"chatspace"}}
       .product-box__img
         = image_tag "chatspace001.png"
       .product-box__title
-        %h2
+        %h5
           ChatSpace
 
-    .product-box
+    .product-box{data:{target:"sukoyaka"}}
       .product-box__img
         = image_tag "sukoyaka001.png"
       .product-box__title
-        %h2
+        %h5
           「NPO法人すこやか地域支援協会」
           %br Webサイト
 
-    .product-box
+    .product-box{data:{target:"merukari"}}
       .product-box__img
         = image_tag "merukari001.png"
       .product-box__title
-        %h2
+        %h5
           メルカリ似ECサイト
         
-= render partial:"chatspace"
+    .product-box{data:{target:"portfolio"}}
+      .product-box__img
+        = image_tag "portfolio001.png"
+      .product-box__title
+        %h5
+          Portfolio
+    
+    .product-box{data:{target:"houmonkaigo"}}
+      .product-box__img
+        = image_tag "carelinkkyujin.png"
+      .product-box__title
+        %h5
+          訪問介護事業
+        
+    .product-box{data:{target:"fukusiyougu-sien"}}
+      .product-box__img
+        = image_tag "kaientai001.png"
+      .product-box__title
+        %h5
+          福祉用具貸与販売事業支援
+
+    .product-box{data:{target:"fukusiyougu"}}
+      .product-box__img
+        = image_tag "fukusiyougu.png"
+      .product-box__title
+        %h5
+          福祉用具貸与販売事業
+    
+    .product-box{data:{target:"kaigoyobou"}}
+      .product-box__img
+        = image_tag "kaigoyoboutaisou.png"
+      .product-box__title
+        %h5
+          介護予防体操教室
+
+    .product-box{data:{target:"kasumizaka"}}
+      .product-box__img
+        = image_tag "kasumizaka001.png"
+      .product-box__title
+        %h5
+          鍼灸整骨院
+    
+    .product-box{data:{target:"reaura"}}
+      .product-box__img
+        = image_tag "reaura-index.png"
+      .product-box__title
+        %h5
+          リユースショップ
+
+    .product-box{data:{target:"saitoujuku"}}
+      .product-box__img
+        = image_tag "saitoujuku-index.png"
+      .product-box__title
+        %h5
+          個人塾
+        
+    .product-box{data:{target:"traner"}}
+      .product-box__img
+        = image_tag "sports-index.jpg"
+      .product-box__title
+        %h5
+          医療トレーナーセミナー
+    
+    .product-box{data:{target:"forum"}}
+      .product-box__img
+        = image_tag "forum-index.png"
+      .product-box__title
+        %h5
+          地域医療フォーラム
+    
+= render partial:"introductions/products/chatspace"
+= render partial:"introductions/products/sukoyaka"
+= render partial:"introductions/products/portfolio"
+= render partial:"introductions/products/merukari"
+= render partial:"introductions/products/forum"
+= render partial:"introductions/products/fukusiyougu-sien"
+= render partial:"introductions/products/fukusiyougu"
+= render partial:"introductions/products/houmonkaigo"
+= render partial:"introductions/products/kaigoyobou"
+= render partial:"introductions/products/kasumizaka"
+= render partial:"introductions/products/reaura"
+= render partial:"introductions/products/saitoujuku"
+= render partial:"introductions/products/traner"

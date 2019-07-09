@@ -1,9 +1,23 @@
 body{
   font-family: 'Noto Sans JP', sans-serif;
+  overflow-y:hidden;
+  letter-spacing: 2px;
 }
 
 h1{
-  font-size: 5rem;
+  font-size:5vh;
+}
+
+h2{
+  font-size:4vh;
+}
+
+h3{
+  font-size: 3vh;
+}
+
+h5{
+  font-size: 1.5vh;
 }
 
 span{
@@ -31,6 +45,9 @@ span{
 }
 
 .nav{
+  z-index: 1;
+  position: fixed;
+  right: 0;
   padding: 10px;
   text-align: right;
 
@@ -40,6 +57,7 @@ span{
     padding: 0 30px;
     border-left: 1px solid #000;
     letter-spacing: 1.5px;
+    cursor: pointer;
   }
 }
 
@@ -53,28 +71,28 @@ path {
   animation: hello 3s ease-in forwards;
 }
 @-webkit-keyframes hello {
-0% {
-stroke-dashoffset: 2000;
-fill:transparent; /*透過*/
-}
-50% {
-fill:transparent; /*透過*/
-}
-100% {
-stroke-dashoffset: 0;
-fill:#333;
-}
-}
-@keyframes hello {
-0% {
-stroke-dashoffset: 2000;
-fill:transparent; /*透過*/
-}
-50% {
-fill:transparent; /*透過*/
-}
-100% {
-stroke-dashoffset: 0;
-fill:#333;
-}
+  0% {
+  stroke-dashoffset: 2000;
+  fill:transparent; /*透過*/
+  }
+  50% {
+  fill:transparent; /*透過*/
+  }
+  100% {
+  stroke-dashoffset: 0;
+  fill:#333;
+  }
+  }
+  @keyframes hello {
+  0% {
+  stroke-dashoffset: 2000;
+  fill:transparent; /*透過*/
+  }
+  50% {
+  fill:transparent; /*透過*/
+  }
+  100% {
+  stroke-dashoffset: 0;
+  fill:#333;
+  }
 }

@@ -1,0 +1,39 @@
+#chatspace.fadeout
+  .product-detail
+    .product-detail-left
+      .product-detail-left__img
+        = image_tag "chatspace001.png"
+      .product-detail-left__sub-img
+        .product-detail-left__sub-img-img01
+          = image_tag "chatspace002.png"
+        .product-detail-left__sub-img-img02
+          = image_tag "chatspace003.png"
+    .product-detail-right
+      .product-detail-right__title
+        %h3
+          Chatspace
+      .product-detail-right__title-wrap
+        %span
+          使用技術
+      .product-detail-right__title-wrap-text
+        %span
+          html/CSS/Ruby/Ruby on Rails/jQuery/MySQL/Nginx/AWS
+      .product-detail-right__title-wrap
+        %span
+          概要
+      .product-detail-right__discription-text
+        %span
+          Twiiterのようなコメントを投稿するWebアプリケーションです。このアプリにはユーザーの登録、ログイン機能、ユーザーの編集機能、グループの作成機能を実装し、コメントの投稿にはAjaxを用いた非同期通信での処理を行っています。このアプリを通して、CRUD、ユーザー登録、MySQL、AWSのEC２について学びました。
+      .product-detail-right__title-wrap
+        %span
+          リンク
+      .product-detail-right__title-wrap-text
+        %span
+          = link_to "GitHub"
+        %span
+          \/
+        %span
+          = link_to "Chatspace"
+      
+    .product-detail-close-btn
+      ☓

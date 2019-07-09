@@ -1,0 +1,39 @@
+#portfolio.fadeout
+  .product-detail
+    .product-detail-left
+      .product-detail-left__img
+        = image_tag "portfolio001.png"
+      .product-detail-left__sub-img
+        .product-detail-left__sub-img-img01
+          = image_tag "portfolio002.png"
+        .product-detail-left__sub-img-img02
+          = image_tag "portfolio003.png"
+    .product-detail-right
+      .product-detail-right__title
+        %h3
+          ポートフォリオ
+      .product-detail-right__title-wrap
+        %span
+          使用技術
+      .product-detail-right__title-wrap-text
+        %span
+          html/CSS/Ruby/Ruby on Rails/jQuery/MySQL/Nginx/AWS
+      .product-detail-right__title-wrap
+        %span
+          概要
+      .product-detail-right__discription-text
+        %span
+          コンセプトは「わかりやすい自分史」です。スクロールする事なく、目的のページをクリックして頂く事で画面に収まった目的の情報を載せる事で、わかりやすさを表現致しました。また、読みやすくする為にフォントと字間の調整に気を配りました。Rubu on Railsで作成し、データベースにはMySQLを、サーバーはAWSを使用しています。
+      .product-detail-right__title-wrap
+        %span
+          リンク
+      .product-detail-right__title-wrap-text
+        %span
+          = link_to "GitHub"
+        %span
+          \/
+        %span
+          = link_to "Portfolio"
+      
+    .product-detail-close-btn
+      ☓

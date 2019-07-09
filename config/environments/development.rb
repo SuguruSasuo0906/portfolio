@@ -64,8 +64,8 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     port: '587',
     domain: 'gmail.com',
-    user_name:'wakuwaku.sasuo@gmail.com',
-    password: 'au08061543738',
+    user_name:ENV["PORTFOLIO_MAIL"],
+    password:ENV["PORTFOLIO_MAIL_PASS"],
     authentication: 'plain',
     enable_starttis_auto: true
   }
