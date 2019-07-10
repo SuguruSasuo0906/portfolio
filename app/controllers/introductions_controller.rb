@@ -7,9 +7,9 @@ class IntroductionsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       ContactMailer.send_mail(@contact).deliver_now
-      flash[:success] = 'お問い合わせを受け付けました'
-      redirect_to root_path
+      redirect_to root_path,notice:'お問い合わせ承りました。ありがとうざいます。'
     else
+      flash.now[:alert] = 'メールの送信に失敗しました。'
       render :index
     end
   end

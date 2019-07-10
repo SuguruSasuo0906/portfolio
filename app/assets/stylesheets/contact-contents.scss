@@ -37,7 +37,6 @@
     padding: 8px;
     margin-bottom: 20px;
     border: 1px solid #aaa;
-
   }
 
   &__text_area{
@@ -47,7 +46,6 @@
     padding: 8px;
     margin-bottom: 20px;
     border: 1px solid #aaa;
-
   }
 
   &__text_btn{
@@ -68,5 +66,7 @@
       cursor: pointer;
     }
   }
-
+  span{
+    color: rgb(237, 146, 159);
+  }
 }

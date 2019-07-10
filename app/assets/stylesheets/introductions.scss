@@ -26,6 +26,21 @@ span{
   font-size: 14px;
 }
 
+.notification{
+  .notice{
+    text-align: center;
+    padding:4px;
+    color: #fff;
+    background: rgb(128, 222, 234);
+  }
+  .alert{
+    text-align: center;
+    padding:4px;
+    color: #fff;
+    background: rgb(237, 146, 159);
+  }
+}
+
 .top-contents{
   position: relative;
   width: 100vw;
