@@ -11,11 +11,11 @@
     &__title{
       font-size: 5rem;
       text-align: center;
-      padding: 40px 0 10px 0;
+      padding: 100px 0 10px 0;
     }
 
     &__description{
-      width: 75%;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -37,8 +37,10 @@
 }
 
 .skill-title{
-  font-size: 3rem;
-  text-align: center
+  text-align: center;
+  h2{
+    font-size: 2rem;
+  }
 }
 
 .skill-wrap{
@@ -49,7 +51,7 @@
   flex-wrap: wrap;
 
   &__box{
-    width: 45%;
+    width: 48%;
     margin-bottom: 20px;
 
     &-img{
@@ -62,7 +64,8 @@
     &-name{
       text-align: center;
       padding: 8px;
-      font-size: 1.6vh;
+      font-size: 1.2rem;
+      word-break: break-word;
     }
 
     &-star{
@@ -70,7 +73,98 @@
       width: 75%;
       margin:0 auto;
     }
-  
   }
 }
 
+
+// スマホ用
+@media screen and (max-width:780px){
+  .skill-contents{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
+    &__wrap{
+      width: 90%;
+      margin:0 auto;
+  
+      &__title{
+        text-align: center;
+        padding: 100px 0 10px 0;
+
+        h1{
+          font-size: 3rem;
+        }
+
+        span{
+          font-size: 1.2rem;
+        }
+      }
+  
+      &__description{
+        width: 100%;
+        margin: 0 0;
+      }
+  
+      &__skill{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:20px;
+        justify-content: space-between;
+        
+        &-wrap{
+          width: 100%;
+          height: auto;
+          padding: 5px 5px 0 5px;
+          box-shadow:0px 0px 5px 3px #d4d4d4;
+          border-radius:2px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  
+  .skill-title{
+    font-size: 1rem;
+    text-align: center;
+
+    h2{
+      font-size: 2rem;
+    }
+  }
+  
+  .skill-wrap{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    &__box{
+      width: 20%;
+      margin-bottom: 20px;
+  
+      &-img{
+        display: block;
+        margin:0 auto;
+        width:6vw;
+        height: auto;
+      }
+  
+      &-name{
+        text-align: center;
+        padding: 8px;
+        font-size: 1rem;
+      }
+  
+      &-star{
+        display: block;
+        width: 75%;
+        margin:0 auto;
+      }
+    }
+  }
+  
+}

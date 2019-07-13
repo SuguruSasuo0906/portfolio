@@ -1,20 +1,46 @@
 = render partial:'flash'
 
-%ul.nav
-  %li.nav__title#top-nav
-    TOP
-  %li.nav__title#about-nav
-    ABOUT
-  %li.nav__title#skill-nav
-    SKILL
-  %li.nav__title#product-nav
-    PRODUCTS
-  %li.nav__title#contact-nav
-    問い合わせ
+#nav-overlay
+
+#drawer
+  #toggle-btn
+    .nav__toggle
+      %span
+      %span
+      %span
+
+  #drawer__circle-bg
+
+  %nav#drawer-nav
+    %ul
+      %li.top-nav.drawer-nav__title
+        TOP
+      %li.about-nav.drawer-nav__title
+        ABOUT
+      %li.skill-nav.drawer-nav__title
+        SKILL
+      %li.product-nav.drawer-nav__title
+        PRODUCTS
+      %li.contact-nav.drawer-nav__title
+        問い合わせ
+
+.nav
+  %ul
+    %li.nav__title.top-nav
+      TOP
+    %li.nav__title.about-nav
+      ABOUT
+    %li.nav__title.skill-nav
+      SKILL
+    %li.nav__title.product-nav
+      PRODUCTS
+    %li.nav__title.contact-nav
+      問い合わせ
 
 #top
+  = embedded_svg("SasuoPortfolio.svg", class: "top-contents__title")
   .top-contents
-    = embedded_svg("SasuoPortfolio.svg", class: "top-contents__title")
+    = image_tag 'index.png',class:"top-contents-img"
 
 #about
   .about-contents
