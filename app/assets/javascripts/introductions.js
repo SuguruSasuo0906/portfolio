@@ -46,7 +46,7 @@ $(function () {
   });
 
   $(function () {
-    $('#toggle-btn').on('click', function () {
+    $('#toggle-btn,.drawer-nav__title').on('click', function () {
       $('body').toggleClass('open');
       if ($('#nav-overlay').css('display') == 'block') {
         $('#nav-overlay').fadeOut();

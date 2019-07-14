@@ -181,11 +181,9 @@
 @media screen and (max-width:780px){
   .product-contents{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background:image-url('tile.png');
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .product-container{
@@ -195,6 +193,10 @@
     &-title{
       text-align: center;
       padding:30px 0 10px 0;
+
+      h1{
+        font-size: 3rem;
+      }
     }
   
     &-discription{
