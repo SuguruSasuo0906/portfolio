@@ -228,6 +228,19 @@
     height: 100%;
     display: block;
     overflow-y: scroll;
+
+    .product-detail::-webkit-scrollbar{
+      width: 5px;
+    }
+    
+    .product-detail::-webkit-scrollbar-track{
+      background: #eee;
+    }
+    
+    .product-detail::-webkit-scrollbar-thumb{
+      background: #aaa;
+      border-radius: 2.5px;
+    }    
   
     &-left{
       width: 100%;
