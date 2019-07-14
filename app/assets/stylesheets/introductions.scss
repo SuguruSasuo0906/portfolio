@@ -26,6 +26,19 @@ span{
   font-size: 1.4rem;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #aaa;
+  border-radius: 2.5px;
+}
+
 .notification{
   .notice{
     text-align: center;
@@ -129,7 +142,7 @@ path {
 }
 
 // 画面幅が700pxまで
-@media screen and (max-width:770px){
+@media screen and (max-width:780px){
   .nav{
     display: none;
   }  
